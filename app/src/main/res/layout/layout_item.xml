@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/productFoodImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                tools:src="@drawable/ic_food"/>
+
+            <TextView
+                android:id="@+id/productNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/productFoodImageView"
+                android:text="DELILABS / Суп куриный 300г 2 шт"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productDescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productNameTextView"
+                android:layout_toRightOf="@+id/productFoodImageView"
+                android:text="Готовый обед в реторт-пакете. Лёгкий куриный, сытный и питательный, но не слишком калорийный супчик, который дарит заряд энергии."
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
